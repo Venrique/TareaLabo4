@@ -5,10 +5,24 @@
  */
 package productos_concretos;
 
+import productos_abstractos.Operacion;
+
 /**
  *
  * @author LN710Q
  */
-public class Hexadecimal {
+public class Hexadecimal implements Operacion {
+
+    @Override
+    public float OperarA(int num1, int num2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String OperarC(int num1) {
+        return Integer.toHexString(num1);
+    }
+
+
     
 }

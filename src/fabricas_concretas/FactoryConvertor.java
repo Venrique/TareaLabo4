@@ -8,6 +8,8 @@ package fabricas_concretas;
 import fabricas_abstractas.AbstractFactory;
 import productos_abstractos.Operacion;
 import productos_concretos.Binario;
+import productos_concretos.Hexadecimal;
+import productos_concretos.Octal;
 
 /**
  *
@@ -20,6 +22,10 @@ public class FactoryConvertor implements AbstractFactory {
         switch(type){
             case "binario":
                 return new Binario();
+            case "octal":
+                return new Octal();
+            case "hexadecimal":
+                return new Hexadecimal();
         }
         return null;
     }

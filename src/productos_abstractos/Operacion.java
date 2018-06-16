@@ -11,6 +11,7 @@ package productos_abstractos;
  * @author LN710Q
  */
 public interface Operacion {
-    void OperarA(int num1, int num2);
-    void OperarC(int num1);
+    float OperarA(int num1, int num2);
+    String OperarC(int num1);
+    
 }

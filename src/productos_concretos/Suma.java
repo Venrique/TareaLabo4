@@ -14,8 +14,14 @@ import productos_abstractos.Operacion;
 public class Suma implements Operacion{
 
     @Override
-    public void Operar(int num1,int num2) {
-        System.out.println("Suma: "+(num1+num2));
+    public float OperarA(int num1, int num2) {
+        return num1+num2;
     }
-    
+
+    @Override
+    public String OperarC(int num1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+
 }
